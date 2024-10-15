@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- css style sheets -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- title -->
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <main>
+    <section class="rating-container">
+      <!-- Rating state start -->
+
+      <div>
+        <img src="images/icon-star.svg" alt="Star icon" class="rating-star w-8 h-8 ">
+      </div>
+      <d iv>
+        <h1 class="rating-heading">How did we do?</h1>
+        </div>
+
+        <div class="rating-request">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </div>
+
+        <div class="rating-number">
+          <button class="button md:px-6 md:py-4">1</button>
+          <button class="button md:px-6 md:py-4">2</button>
+          <button class="button md:px-6 md:py-4">3</button>
+          <button class="button md:px-6 md:py-4">4</button>
+          <button class="button md:px-6 md:py-4">5</button>
+        </div>
+        <button id="submit-button">Submit</button>
+    </section>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <section class="thank-you none">
+      <div>
+        <img src="images/illustration-thank-you.svg" alt="thank-you img" class="thanks-img">
+      </div>
+
+      <div class="rated-container">
+        You selected <span id="rated"></span> out of 5
+      </div>
+
+      <div>
+        <h1 class="thanks-heading">Thank you!</h1>
+      </div>
+
+      <div class="thanks-text">
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+          touch! </p>
+      </div>
+      <!-- Thank you state end -->
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
